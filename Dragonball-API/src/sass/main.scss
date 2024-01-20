@@ -49,25 +49,26 @@ body {
     gap: 1.5rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-}
 
-.dbzCharacters {
-    padding: 2rem;
-    height: 28rem;
-    width: 16.5rem;
-    cursor: pointer;
-    margin: 1.4rem 0;
-    border-radius: 2rem;
-    background-color: white;
-    border: 0.01rem solid black;
-    transition: transform 0.3s ease-in-out;
-
-    &:hover {
-        transform: scale(1.1);
-        background-color: beige;
-        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+    .dbzCharacters {
+        padding: 2rem;
+        height: 28rem;
+        width: 16.5rem;
+        cursor: pointer;
+        margin: 1.4rem 0;
+        border-radius: 2rem;
+        background-color: white;
+        border: 0.01rem solid black;
+        transition: transform 0.3s ease-in-out;
+    
+        &:hover {
+            transform: scale(1.1);
+            background-color: beige;
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+        }
     }
 }
+
 
 footer {
     padding: 1rem;
@@ -78,12 +79,37 @@ footer {
 }
 
 .modal {
-    width: 15rem;
-    padding: 20px;
+    width: 12rem;
+    padding: 1rem;
     z-index: 1000;
     position: fixed;
-    border-radius: 10px;
-    background-color: yellow;
+    border-radius: 1rem;
     transform: translate(-50%);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: yellow;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    
+    &.modal h2 {
+        margin-bottom: 1.3rem;
+        text-decoration: underline;
+    }
+
+    &.modal p {
+        margin: 0.6rem 0;
+        font-size: 1.2rem;
+    }
+
+    &.modal button {
+        border: none;
+        color: white;
+        cursor: pointer;
+        padding: 0.5rem 0.8rem;
+        border-radius: 0.5rem;
+        background-color:  #3498db;
+    
+        &:hover {
+            background-color: #19699e;
+        }
+    }
 }
+
+

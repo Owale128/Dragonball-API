@@ -48,8 +48,7 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
-
-.dbzCharacters {
+.dbzContainer .dbzCharacters {
   padding: 2rem;
   height: 28rem;
   width: 16.5rem;
@@ -60,7 +59,7 @@ body {
   border: 0.01rem solid black;
   transition: transform 0.3s ease-in-out;
 }
-.dbzCharacters:hover {
+.dbzContainer .dbzCharacters:hover {
   transform: scale(1.1);
   background-color: beige;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
@@ -75,12 +74,31 @@ footer {
 }
 
 .modal {
-  width: 15rem;
-  padding: 20px;
+  width: 12rem;
+  padding: 1rem;
   z-index: 1000;
   position: fixed;
-  border-radius: 10px;
-  background-color: yellow;
+  border-radius: 1rem;
   transform: translate(-50%);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: yellow;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+.modal.modal h2 {
+  margin-bottom: 1.3rem;
+  text-decoration: underline;
+}
+.modal.modal p {
+  margin: 0.6rem 0;
+  font-size: 1.2rem;
+}
+.modal.modal button {
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+  background-color: #3498db;
+}
+.modal.modal button:hover {
+  background-color: #19699e;
 }/*# sourceMappingURL=main.css.map */

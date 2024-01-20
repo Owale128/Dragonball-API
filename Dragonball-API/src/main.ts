@@ -49,7 +49,6 @@ const showmodal = (character: dbzCharacter, event: MouseEvent) => {
     const modal = document.createElement('div');
     modal.classList.add('modal');
     modal.innerHTML = `
-    <h2>${character.name}</h2>
     <p>Gender: ${character.gender}</p>
     <p>Race: ${character.race}
     <p>Power Level: ${character.ki}</p>
