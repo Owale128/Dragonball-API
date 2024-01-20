@@ -60,6 +60,16 @@ const showmodal = (character: dbzCharacter, event: MouseEvent) => {
     if (closeBtn) {
         closeBtn.addEventListener('click', closeModal);
     }
+
+    const clickedElement = event.currentTarget as HTMLElement;
+    const rect = clickedElement.getBoundingClientRect();
+    const modalWidth = modal.offsetWidth;
+    const modalHeight = modal.offsetHeight;
+
+    modal.style.position = 'absolute';
+    modal.style.top = `${rect.top + window.scrollY + (rect.height - modalHeight) / 2}px`;
+    modal.style.left = `${rect.left + window.scrollX + (rect.width - modalWidth) / 2}px`;
+
     document.body.appendChild(modal)
     currentmodal = modal;
 };
