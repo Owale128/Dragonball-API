@@ -6,21 +6,21 @@
 
 body {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
+    align-items: center;
+    flex-direction: column;
+    scroll-behavior: smooth;
     font-family: Arial, sans-serif;
     background-color: aliceblue;
-    scroll-behavior: smooth;
 }
 
 .hero-image {
     width: 99vw;
-    padding: 5rem;
     height: 100vh;
+    padding: 5rem;
+    color: white;
     margin-bottom: 10rem;
     border-radius: 0.5rem;
-    color: white;
     background-size: cover;
     background-position: center;
     background-image: url('/src/image/Dbz.jpg');
@@ -46,33 +46,43 @@ body {
 }
 
 .dbzContainer {
+    gap: 1.5rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 1.5rem;
 }
 
 .dbzCharacters {
     padding: 2rem;
-    width: 16.5rem;
     height: 28rem;
+    width: 16.5rem;
+    cursor: pointer;
     margin: 1.4rem 0;
     border-radius: 2rem;
-    cursor: pointer;
-    border: 0.01rem solid black;
     background-color: white;
+    border: 0.01rem solid black;
     transition: transform 0.3s ease-in-out;
 
     &:hover {
+        transform: scale(1.1);
         background-color: beige;
         box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
-        transform: scale(1.1);
     }
 }
 
 footer {
-    border: 0.01rem solid black;
-    width: 94.5rem;
     padding: 1rem;
+    width: 94.5rem;
     margin-top: 6rem;
     border-radius: 0.6rem;
+    border: 0.01rem solid black;
+}
+
+.modal {
+    width: 15rem;
+    padding: 20px;
+    z-index: 1000;
+    position: fixed;
+    border-radius: 10px;
+    background-color: yellow;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
