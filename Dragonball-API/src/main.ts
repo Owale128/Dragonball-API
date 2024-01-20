@@ -15,6 +15,11 @@ const getDBZ = async () => {
     console.log('API Response:', dbzData);
     displayCharacters(dbzData);
 
+    const btn = document.getElementById('btn') as HTMLButtonElement;
+    if (btn) {
+        btn.addEventListener('click', scrollToDbzCharacters)
+    }
+
     } catch (error) {
         console.error('Could not get Dragon Ball Z-data:', error);
     }
@@ -30,6 +35,13 @@ const displayCharacters = (characters: dbzCharacter[]) => {
 
         dbzContainer.appendChild(characterElement);
     });
+};
+
+const scrollToDbzCharacters = () => {
+const dbzContainer = document.getElementById('dbzContainer') as HTMLDivElement;
+if (dbzContainer) {
+    dbzContainer.scrollIntoView({ behavior: 'smooth'});
+}
 };
 
 getDBZ()
