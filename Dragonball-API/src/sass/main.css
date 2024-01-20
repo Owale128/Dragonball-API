@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -71,10 +72,11 @@ footer {
   margin-top: 6rem;
   border-radius: 0.6rem;
   border: 0.01rem solid black;
+  margin-bottom: 0.2rem;
 }
 
 .modal {
-  width: 12rem;
+  width: 14rem;
   padding: 1rem;
   z-index: 1000;
   position: fixed;
@@ -101,4 +103,40 @@ footer {
 }
 .modal.modal button:hover {
   background-color: #19699e;
+}
+
+@media only screen and (max-width: 78.567rem) {
+  .dbzContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .dbzCharacter {
+    padding: 2rem;
+    width: 15.5rem;
+    height: 26rem;
+  }
+  .modal {
+    width: 13rem;
+  }
+  footer {
+    width: 48.5rem;
+    margin-bottom: 0.2rem;
+  }
+}
+/* Andra breakpoint: Visa 2 bilder på varje rad */
+@media only screen and (max-width: 44.721rem) {
+  .dbzContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .dbzCharacter {
+    padding: 2rem;
+    width: 12.5rem;
+    height: 22rem;
+  }
+  .modal {
+    width: 12rem;
+  }
+  footer {
+    width: 29rem;
+    margin-bottom: 0.2rem;
+  }
 }/*# sourceMappingURL=main.css.map */
