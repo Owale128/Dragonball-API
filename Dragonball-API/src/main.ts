@@ -33,12 +33,18 @@ const displayCharacters = (characters: dbzCharacter[]) => {
         const characterElement = document.createElement('div');
         characterElement.innerHTML = `<h2>${character.name}</h2> <img src="${character.image}" alt="${character.name}" class="dbzCharacters">`;
 
+        characterElement.addEventListener('click', (event) => showmodal(character, event));
         dbzContainer.appendChild(characterElement);
     });
 };
 
+let currentmodal: HTMLElement | null = null;
 
 const showmodal = (character: dbzCharacter, event: MouseEvent) => {
+
+    if (currentmodal) {
+        closeModal();
+    }
     
     const modal = document.createElement('div');
     modal.classList.add('modal');
@@ -50,8 +56,20 @@ const showmodal = (character: dbzCharacter, event: MouseEvent) => {
     <button id="closeBtn">Close</button>
     `;
 
+    const closeBtn = modal.querySelector('#closeBtn') as HTMLButtonElement;
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeModal);
+    }
     document.body.appendChild(modal)
-}
+    currentmodal = modal;
+};
+
+const closeModal = () => {
+    if (currentmodal) {
+        currentmodal.remove();
+        currentmodal = null;
+    }
+};
 
 const scrollToDbzCharacters = () => {
 const dbzContainer = document.getElementById('dbzContainer') as HTMLDivElement;
