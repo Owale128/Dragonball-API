@@ -14,6 +14,35 @@ body {
   scroll-behavior: smooth;
 }
 
+.hero-image {
+  width: 99vw;
+  padding: 5rem;
+  height: 100vh;
+  margin-bottom: 10rem;
+  border-radius: 0.5rem;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/src/image/Dbz.jpg");
+}
+.hero-image h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.hero-image .btn {
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 0.8rem;
+  transition: 0.2s ease-in-out;
+}
+.hero-image .btn:hover {
+  color: white;
+  background-color: red;
+}
+
 .dbzContainer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -29,7 +58,7 @@ body {
   cursor: pointer;
   border: 1px solid black;
   background-color: white;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
 .dbzCharacters:hover {
   background-color: beige;
