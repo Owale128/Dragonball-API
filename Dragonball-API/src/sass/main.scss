@@ -54,7 +54,7 @@ footer {
   @include modalMix;
     
   &.modal h2 {
-      margin-bottom: 1.3rem;
+      margin-bottom: $mb2;
       text-decoration: underline;
   }
 
@@ -72,7 +72,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 78.567rem) {
+@media only screen and (max-width: $bp-large) {
     .dbzContainer {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -90,7 +90,7 @@ footer {
 }
   }
   
-  @media only screen and (max-width: 44.721rem) {
+  @media only screen and (max-width: $bp-medium) {
     .dbzContainer {
       grid-template-columns: repeat(1, 1fr);
     }
