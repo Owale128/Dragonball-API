@@ -1,3 +1,5 @@
+@import '_mixins';
+
 * {
     padding: 0;
     margin: 0;
@@ -5,44 +7,25 @@
 }
 
 body {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
-    scroll-behavior: smooth;
-    font-family: Arial, sans-serif;
-    background-color: aliceblue;
+ @include bodyMix;
 }
 
 .hero-image {
-    width: 99vw;
-    height: 100vh;
-    padding: 5rem;
-    color: white;
-    margin-bottom: 10rem;
-    border-radius: 0.5rem;
-    background-size: cover;
-    background-position: center;
-    background-image: url('/src/image/Dbz.jpg');
+  @include heroImageMix;
 
-    h1 {
-        font-size: 3rem;
-        margin-bottom: 2rem;
-    }
+  h1 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+  }
 
     .btn {
-        border: none;
-        padding: 1rem;
-        cursor: pointer;
-        font-weight: bold;
-        font-size: 1.5rem;
-        border-radius: 0.8rem;
-        transition: 0.2s ease-in-out;
-        &:hover {
-            color: white;
-            background-color: red;
-        }
+    @include btnMix;
+
+    &:hover {
+        color: white;
+        background-color: red;
     }
+  }
 }
 
 .dbzContainer {
@@ -51,66 +34,42 @@ body {
     grid-template-columns: repeat(5, 1fr);
 
     .dbzCharacters {
-        padding: 2rem;
-        height: 28rem;
-        width: 16.5rem;
-        cursor: pointer;
-        margin: 1.4rem 0;
-        border-radius: 2rem;
-        background-color: white;
-        border: 0.01rem solid black;
-        transition: transform 0.3s ease-in-out;
-    
-        &:hover {
-            transform: scale(1.1);
-            background-color: beige;
-            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
-        }
+    @include dbzCharactersMix;
+
+    &:hover {
+      transform: scale(1.1);
+      background-color: beige;
+      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
     }
+  }
 }
 
 
 footer {
-    padding: 1rem;
-    width: 94.5rem;
-    margin-top: 6rem;
-    border-radius: 0.6rem;
-    border: 0.01rem solid black;
-    margin-bottom: 0.2rem;
+@include footerMix;
 }
 
 .modal {
     width: 14rem;
-    padding: 1rem;
-    z-index: 1000;
-    position: fixed;
-    border-radius: 1rem;
-    transform: translate(-50%);
-    background-color: yellow;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  @include modalMix;
     
-    &.modal h2 {
-        margin-bottom: 1.3rem;
-        text-decoration: underline;
-    }
+  &.modal h2 {
+      margin-bottom: 1.3rem;
+      text-decoration: underline;
+  }
 
-    &.modal p {
-        margin: 0.6rem 0;
-        font-size: 1.2rem;
-    }
+  &.modal p {
+      margin: 0.6rem 0;
+      font-size: 1.2rem;
+  }
 
     &.modal button {
-        border: none;
-        color: white;
-        cursor: pointer;
-        padding: 0.5rem 0.8rem;
-        border-radius: 0.5rem;
-        background-color:  #3498db;
-    
-        &:hover {
-            background-color: #19699e;
-        }
+  @include modalButtonMix;
+  
+    &:hover {
+      background-color: #19699e;
     }
+  }
 }
 
 @media only screen and (max-width: 78.567rem) {
