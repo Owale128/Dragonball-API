@@ -72,6 +72,9 @@ footer {
   border: 0.01rem solid black;
   margin-bottom: 0.2rem;
 }
+footer:hover {
+  background-color: rgb(208, 220, 230);
+}
 
 .modal {
   width: 14rem;

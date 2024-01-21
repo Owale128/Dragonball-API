@@ -47,6 +47,10 @@ body {
 
 footer {
 @include footerMix;
+
+&:hover {
+  background-color: rgb(208, 220, 230);
+}
 }
 
 .modal {
