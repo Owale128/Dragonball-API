@@ -1,4 +1,5 @@
 @import '_mixins';
+@import '_variables';
 
 * {
     padding: 0;
@@ -14,8 +15,8 @@ body {
   @include heroImageMix;
 
   h1 {
-      font-size: 3rem;
-      margin-bottom: 2rem;
+      font-size: $fsize;
+      margin-bottom: $mb;
   }
 
     .btn {
@@ -23,7 +24,7 @@ body {
 
     &:hover {
         color: white;
-        background-color: red;
+        background-color: $bg;
     }
   }
 }
@@ -38,19 +39,18 @@ body {
 
     &:hover {
       transform: scale(1.1);
-      background-color: beige;
+      background-color: $bg2;
       box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
     }
   }
 }
-
 
 footer {
 @include footerMix;
 }
 
 .modal {
-    width: 14rem;
+    width: $mw3;
   @include modalMix;
     
   &.modal h2 {
@@ -60,14 +60,14 @@ footer {
 
   &.modal p {
       margin: 0.6rem 0;
-      font-size: 1.2rem;
+      font-size: $fsize2;
   }
 
     &.modal button {
   @include modalButtonMix;
   
     &:hover {
-      background-color: #19699e;
+      background-color: $bg3;
     }
   }
 }
@@ -77,37 +77,36 @@ footer {
       grid-template-columns: repeat(2, 1fr);
     }
     .dbzCharacter {
-      padding: 2rem;
-      width: 15.5rem;
-      height: 26rem;
+      padding: $pad;
+      width: $wid2;
+      height: $ht2;
     }
   .modal {
-    width: 13rem;
+    width: $mw;
   }
   footer {
-    width: 48.5rem;
-    margin-bottom: 0.2rem;
+    width: $fw;
+    margin-bottom: $fm;
 }
   }
   
-  /* Andra breakpoint: Visa 2 bilder på varje rad */
   @media only screen and (max-width: 44.721rem) {
     .dbzContainer {
       grid-template-columns: repeat(1, 1fr);
     }
   
     .dbzCharacter {
-      padding: 2rem;
-      width: 12.5rem;
-      height: 22rem;
+      padding: $pad;
+      width: $wid;
+      height: $ht;
     }
   
     .modal {
-      width: 12rem;
+      width: $mw2;
     }
     footer {
-        width: 29rem;
-        margin-bottom: 0.2rem;
+        width: $fw2;
+        margin-bottom: $fm;
     }
   }
 
