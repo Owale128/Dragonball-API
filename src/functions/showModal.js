@@ -1,7 +1,7 @@
 "use strict";
 // Object.defineProperty(exports, "__esModule", { value: true });
 // const _showmodal = void 0;
-export { _showmodal as showmodal };
+// export { _showmodal as showmodal };
 var currentmodal = null;
 var showmodal = function (character, event) {
     if (currentmodal) {

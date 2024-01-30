@@ -1,7 +1,7 @@
 "use strict";
 // Object.defineProperty(exports, "__esModule", { value: true });
 // const _displayCharacters = void 0;
-export { _displayCharacters as displayCharacters };
+// export { _displayCharacters as displayCharacters };
 import { showmodal } from "./showModal";
 var displayCharacters = function (characters) {
     var dbzContainer = document.getElementById('dbzContainer');
