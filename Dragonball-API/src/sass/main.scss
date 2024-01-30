@@ -115,18 +115,28 @@ footer {
 
     .hero-image {
       width: 97vw;
+
+      h1 {
+        color: rgb(248, 248, 56);
+      }
     }
+    
     
     .dbzContainer {
       grid-template-columns: repeat(1, 1fr);
+      
+      h2 {
+        font-size: 2.3rem;
+      }
     }
   
     .dbzCharacter {
       padding: $pad;
       width: $wid;
       height: $ht;
+      
     }
-  
+    
     .modal {
       width: $mw2;
     }
