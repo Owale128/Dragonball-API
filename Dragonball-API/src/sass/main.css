@@ -10,9 +10,19 @@ body {
   align-items: center;
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: aliceblue;
+  background-color: rgba(255, 177, 177, 0.232);
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .hero-image {
   width: 99vw;
   height: 100vh;
@@ -27,6 +37,7 @@ body {
 .hero-image h1 {
   font-size: 3rem;
   margin-bottom: 2rem;
+  animation: fadeInUp 1.5s ease-in-out;
 }
 .hero-image .btn {
   border: none;
@@ -36,6 +47,7 @@ body {
   font-size: 1.5rem;
   border-radius: 0.8rem;
   transition: 0.2s ease-in-out;
+  animation: fadeInUp 1.5s ease-in-out;
 }
 .hero-image .btn:hover {
   color: white;
@@ -46,6 +58,7 @@ body {
   gap: 1.5rem;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 2rem;
 }
 .dbzContainer .dbzCharacters {
   padding: 2rem;
@@ -66,14 +79,8 @@ body {
 
 footer {
   padding: 1rem;
-  width: 94.5rem;
   margin-top: 6rem;
-  border-radius: 0.6rem;
-  border: 0.01rem solid black;
   margin-bottom: 0.2rem;
-}
-footer:hover {
-  background-color: rgb(208, 220, 230);
 }
 
 .modal {
@@ -108,8 +115,12 @@ footer:hover {
 }
 
 @media only screen and (max-width: 78.567rem) {
+  .hero-image {
+    width: 98.2vw;
+  }
   .dbzContainer {
     grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 6rem;
   }
   .dbzCharacter {
     padding: 2rem;
@@ -125,6 +136,9 @@ footer:hover {
   }
 }
 @media only screen and (max-width: 44.721rem) {
+  .hero-image {
+    width: 97vw;
+  }
   .dbzContainer {
     grid-template-columns: repeat(1, 1fr);
   }

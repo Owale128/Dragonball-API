@@ -11,12 +11,24 @@ body {
  @include bodyMix;
 }
 
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
 .hero-image {
   @include heroImageMix;
 
   h1 {
       font-size: $fsize;
       margin-bottom: $mb;
+      animation: fadeInUp 1.5s ease-in-out;
   }
 
     .btn {
@@ -26,6 +38,7 @@ body {
         color: white;
         background-color: $bg;
     }
+    animation: fadeInUp 1.5s ease-in-out;
   }
 }
 
@@ -33,6 +46,7 @@ body {
     gap: 1.5rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 2rem;
 
     .dbzCharacters {
     @include dbzCharactersMix;
@@ -48,9 +62,6 @@ body {
 footer {
 @include footerMix;
 
-&:hover {
-  background-color: rgb(208, 220, 230);
-}
 }
 
 .modal {
@@ -77,8 +88,14 @@ footer {
 }
 
 @media only screen and (max-width: $bp-large) {
-    .dbzContainer {
+    
+  .hero-image {
+    width: 98.2vw;
+  }
+
+  .dbzContainer {
       grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 6rem;
     }
     .dbzCharacter {
       padding: $pad;
@@ -95,6 +112,11 @@ footer {
   }
   
   @media only screen and (max-width: $bp-medium) {
+
+    .hero-image {
+      width: 97vw;
+    }
+    
     .dbzContainer {
       grid-template-columns: repeat(1, 1fr);
     }
