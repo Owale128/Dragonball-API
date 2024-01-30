@@ -36,7 +36,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 // Object.defineProperty(exports, "__esModule", { value: true });
-import axios_1 from "axios";
+import axios from "axios";
 import { displayCharacters } from "./functions/displayCharacters";
 import { scrollToDbzCharacters } from "./functions/scrollToDbzCharacters";
 var getDBZ = function () { return __awaiter(void 0, void 0, void 0, function () {
@@ -45,7 +45,7 @@ var getDBZ = function () { return __awaiter(void 0, void 0, void 0, function () 
         switch (_a.label) {
             case 0:
                 _a.trys.push([0, 2, , 3]);
-                return [4 /*yield*/, axios_1.get('https://dragonball-api.com/api/characters?page=1&limit=4&gender=Male&race=Saiyan')];
+                return [4 /*yield*/, axios.get('https://dragonball-api.com/api/characters?page=1&limit=4&gender=Male&race=Saiyan')];
             case 1:
                 response = _a.sent();
                 dbzData = response.data;
