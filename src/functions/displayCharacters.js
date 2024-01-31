@@ -9,5 +9,3 @@ export function displayCharacters (characters) {
         dbzContainer.appendChild(characterElement);
     });
 };
-const _displayCharacters = displayCharacters;
-// export { _displayCharacters as displayCharacters };
