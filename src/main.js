@@ -36,7 +36,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 // Object.defineProperty(exports, "__esModule", { value: true });
-import axios from 'axios';
+// import axios from 'axios';
 import { displayCharacters } from "../src/functions/displayCharacters.js";
 import { scrollToDbzCharacters } from "../src/functions/scrollToDbzCharacters.js";
 var getDBZ = function () { return __awaiter(void 0, void 0, void 0, function () {
