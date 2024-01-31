@@ -45,8 +45,8 @@ transition: transform 0.3s ease-in-out;
 
 @mixin footerMix {
 padding: 1rem;
-// width: 94.5rem;
 margin-top: 6rem;
+max-width: 60vw;
 // border-radius: 0.6rem;
 // border: 0.01rem solid black;
 margin-bottom: 0.2rem;

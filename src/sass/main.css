@@ -84,6 +84,7 @@ html body {
 footer {
   padding: 1rem;
   margin-top: 6rem;
+  max-width: 60vw;
   margin-bottom: 0.2rem;
 }
 
@@ -177,7 +178,6 @@ footer {
     font-size: 1.3rem;
   }
   footer {
-    overflow: hidden;
     width: 29rem;
     margin-bottom: 0.2rem;
   }
