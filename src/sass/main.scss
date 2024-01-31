@@ -7,8 +7,11 @@
     box-sizing: border-box;
 }
 
-body {
- @include bodyMix;
+html {
+ overflow-x: hidden;
+  body {
+    @include bodyMix;
+  }
 }
 
 @keyframes fadeInUp {
@@ -108,13 +111,9 @@ footer {
   
   @media only screen and (max-width: $bp-medium) {
 
-  body, html {
-    overflow-x: hidden;
-  }
-
     .hero-image {
       width: 100vw;
-      overflow: hidden;
+      overflow-x: hidden;
 
       h1 {
         color: rgb(248, 248, 56);
