@@ -3,7 +3,7 @@
 // const _displayCharacters = void 0;
 // export { _displayCharacters as displayCharacters };
 import { showmodal } from "./showModal";
-var displayCharacters = function (characters) {
+export function displayCharacters (characters) {
     var dbzContainer = document.getElementById('dbzContainer');
     characters.forEach(function (character) {
         var characterElement = document.createElement('div');
@@ -13,4 +13,4 @@ var displayCharacters = function (characters) {
     });
 };
 const _displayCharacters = displayCharacters;
-export { _displayCharacters as displayCharacters };
+// export { _displayCharacters as displayCharacters };
