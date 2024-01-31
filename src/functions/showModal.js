@@ -1,7 +1,5 @@
 "use strict";
-// Object.defineProperty(exports, "__esModule", { value: true });
-// const _showmodal = void 0;
-// export { _showmodal as showmodal };
+
 var currentmodal = null;
 export function showmodal (character, event) {
     if (currentmodal) {
@@ -24,8 +22,7 @@ export function showmodal (character, event) {
     document.body.appendChild(modal);
     currentmodal = modal;
 };
-// const _showmodal = showmodal;
-// export { _showmodal as showmodal };
+
 var closeModal = function () {
     if (currentmodal) {
         currentmodal.remove();
