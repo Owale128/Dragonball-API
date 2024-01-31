@@ -108,7 +108,7 @@ footer {
   
   @media only screen and (max-width: $bp-medium) {
 
-  body {
+  body, html {
     overflow-x: hidden;
   }
 
