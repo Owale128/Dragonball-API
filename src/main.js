@@ -35,8 +35,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-// Object.defineProperty(exports, "__esModule", { value: true });
-// import axios from 'axios';
+
 import { displayCharacters } from "../src/functions/displayCharacters.js";
 import { scrollToDbzCharacters } from "../src/functions/scrollToDbzCharacters.js";
 var getDBZ = function () { return __awaiter(void 0, void 0, void 0, function () {
@@ -49,7 +48,6 @@ var getDBZ = function () { return __awaiter(void 0, void 0, void 0, function () 
             case 1:
                 response = _a.sent();
                 dbzData = response.data;
-                console.log('API Response:', dbzData);
                 (0, displayCharacters)(dbzData);
                 btn = document.getElementById('btn');
                 if (btn) {
