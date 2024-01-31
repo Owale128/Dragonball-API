@@ -137,10 +137,6 @@ footer {
   }
 }
 @media only screen and (max-width: 44.721rem) {
-  html, body {
-    overflow-x: hidden;
-    position: relative;
-  }
   .hero-image {
     width: 100vw;
     overflow-x: hidden;
