@@ -25,7 +25,7 @@ export function showmodal (character, event) {
     currentmodal = modal;
 };
 const _showmodal = showmodal;
-export { _showmodal as showmodal };
+// export { _showmodal as showmodal };
 var closeModal = function () {
     if (currentmodal) {
         currentmodal.remove();
