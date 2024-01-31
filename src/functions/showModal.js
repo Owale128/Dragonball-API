@@ -3,7 +3,7 @@
 // const _showmodal = void 0;
 // export { _showmodal as showmodal };
 var currentmodal = null;
-var showmodal = function (character, event) {
+export function showmodal (character, event) {
     if (currentmodal) {
         closeModal();
     }
