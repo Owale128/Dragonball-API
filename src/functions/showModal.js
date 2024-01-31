@@ -24,7 +24,7 @@ export function showmodal (character, event) {
     document.body.appendChild(modal);
     currentmodal = modal;
 };
-const _showmodal = showmodal;
+// const _showmodal = showmodal;
 // export { _showmodal as showmodal };
 var closeModal = function () {
     if (currentmodal) {
