@@ -2,7 +2,7 @@
 // Object.defineProperty(exports, "__esModule", { value: true });
 // const _displayCharacters = void 0;
 // export { _displayCharacters as displayCharacters };
-import { showmodal } from "../src/functions/showModal.js";
+import { showmodal } from "./showModal.js";
 export function displayCharacters (characters) {
     var dbzContainer = document.getElementById('dbzContainer');
     characters.forEach(function (character) {
