@@ -32,6 +32,8 @@ html {
       font-size: $fsize;
       margin-bottom: $mb;
       animation: fadeInUp 1.5s ease-in-out;
+      color: $txtColor
+      
   }
 
     .btn {
@@ -117,6 +119,7 @@ footer {
 
       h1 {
         color: rgb(248, 248, 56);
+        font-size: 3rem;
       }
     }
     
