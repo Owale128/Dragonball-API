@@ -9,4 +9,4 @@ You can visit the page at: https://owale128.github.io/Dragonball-API/
 ![Dbz-app](https://github.com/Owale128/Dragonball-API/assets/110387474/d7766241-7645-4ba6-99ee-f1e8031e9999)
 
 # Stack: 
-[![My Skills](https://skillicons.dev/icons?i=html,js,ts,sass,axios)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,js,ts,sass)](https://skillicons.dev)
